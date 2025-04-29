@@ -16,6 +16,7 @@ public class Principal {
             Pelicula pelicula = consulta.buscarPelicula(numeroPelicula);
             System.out.println(pelicula.toString());
             GeneradorDeArchivo generador = new GeneradorDeArchivo();
+            System.out.println("grabara :"+pelicula);
             generador.guardarJson(pelicula);
 
         } catch (RuntimeException | IOException e) {
